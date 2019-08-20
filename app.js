@@ -20,8 +20,8 @@ yargs.command({
       alias: 'b'
     }
   },
-  handler: function(argv) {
-    notes.addNote(argv.title, argv.body)
+  handler: function({title, body}) {
+    notes.addNote(title, body)
   }
 })
 
